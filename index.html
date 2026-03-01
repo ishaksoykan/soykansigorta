@@ -7,6 +7,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+<!-- FONT AWESOME ICON -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 *{
   margin:0;
@@ -81,6 +84,7 @@ p{
 .services{
   padding:80px 20px;
   text-align:center;
+  background:white;
 }
 
 .services h2{
@@ -96,7 +100,7 @@ p{
 }
 
 .card{
-  background:white;
+  background:#ffffff;
   padding:30px;
   width:280px;
   border-radius:15px;
@@ -108,8 +112,21 @@ p{
   transform:translateY(-8px);
 }
 
+.card i{
+  font-size:40px;
+  color:#00b894;
+  margin-bottom:20px;
+}
+
 .card h3{
   margin-bottom:15px;
+  font-size:20px;
+}
+
+.card p{
+  font-size:15px;
+  margin-bottom:0;
+  color:#555;
 }
 
 /* FOOTER */
@@ -143,25 +160,31 @@ footer{
 <section class="services">
   <h2>Hizmetlerimiz</h2>
   <div class="cards">
+    
     <div class="card">
+      <i class="fa-solid fa-car"></i>
       <h3>Trafik Sigortası</h3>
-      <p>Zorunlu trafik sigortasında en uygun fiyat garantisi.</p>
+      <p>Zorunlu trafik sigortasında en uygun fiyat seçenekleri.</p>
     </div>
 
     <div class="card">
+      <i class="fa-solid fa-shield-halved"></i>
       <h3>Kasko Sigortası</h3>
-      <p>Aracınız için geniş kapsamlı güvence seçenekleri.</p>
+      <p>Aracınız için geniş kapsamlı güvence ve hasar koruması.</p>
     </div>
 
     <div class="card">
+      <i class="fa-solid fa-house"></i>
       <h3>Konut Sigortası</h3>
-      <p>Evinizi ve eşyalarınızı güvence altına alın.</p>
+      <p>Evinizi deprem, yangın ve risklere karşı güvence altına alın.</p>
     </div>
 
     <div class="card">
+      <i class="fa-solid fa-heart-pulse"></i>
       <h3>Sağlık Sigortası</h3>
       <p>Kendiniz ve aileniz için özel sağlık çözümleri.</p>
     </div>
+
   </div>
 </section>
 
