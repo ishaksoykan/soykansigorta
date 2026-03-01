@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soykan Sigorta | Ezbersiz Sigorta</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f7f6;
+color:#0f2f2d;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#0f2f2d,#0e6f66);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+header img{
+width:120px;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:38px;
+font-weight:700;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+background:#18b5a4;
+color:white;
+padding:15px 35px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#14a494;
+transform:translateY(-2px);
+}
+
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+font-weight:700;
+margin-bottom:50px;
+color:#0f2f2d;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:18px;
+color:#0e6f66;
+}
+
+.card p{
+font-size:14px;
+opacity:0.8;
+}
+
+.about-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+cursor:pointer;
+}
+
+.about-content{
+display:none;
+margin-top:20px;
+font-size:15px;
+}
+
+footer{
+background:#0f2f2d;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpg" alt="Soykan Sigorta Logo">
+<h1>Soykan Sigorta</h1>
+<p>Sigortada Güvenin Yeni Standardı</p>
+<a href="https://wa.me/905322056786" class="btn">Hemen Teklif Al</a>
+</header>
+
+<section>
+<h2 class="section-title">Hizmetlerimiz</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Trafik Sigortası</h3>
+<p>Zorunlu trafik poliçelerinde en uygun ve hızlı teklif.</p>
+</div>
+
+<div class="card">
+<h3>Kasko</h3>
+<p>Aracınız için geniş teminatlı güvence seçenekleri.</p>
+</div>
+
+<div class="card">
+<h3>Konut Sigortası</h3>
+<p>Evinizi risklere karşı güvence altına alın.</p>
+</div>
+
+<div class="card">
+<h3>DASK</h3>
+<p>Zorunlu deprem sigortası çözümleri.</p>
+</div>
+
+<div class="card">
+<h3>Tamamlayıcı Sağlık Sigortası</h3>
+<p>Özel hastanelerde fark ödemeden tedavi imkanı.</p>
+</div>
+
+<div class="card">
+<h3>Sağlık Sigortası</h3>
+<p>Kapsamlı bireysel ve aile sağlık çözümleri.</p>
+</div>
+
+<div class="card">
+<h3>Seyahat Sigortası</h3>
+<p>Yurt içi ve yurt dışı seyahat güvencesi.</p>
+</div>
+
+<div class="card">
+<h3>İş Yeri Sigortası</h3>
+<p>İşletmenizi beklenmedik risklere karşı koruyun.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Hakkımızda</h2>
+
+<div class="about-box" onclick="toggleAbout()">
+<strong>Biz Kimiz? (Tıklayın)</strong>
+<div class="about-content" id="aboutText">
+Soykan Sigorta olarak sektördeki deneyimimizi güçlü danışmanlık anlayışı ile birleştiriyoruz. Amacımız sadece poliçe kesmek değil; müşterilerimize doğru teminatı, doğru fiyatla ve şeffaf şekilde sunmaktır. Ezbersiz Sigorta anlayışımızla her müşteriye özel çözüm üretiriz.
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Soykan Sigorta | Ezbersiz Sigorta
+</footer>
+
+<script>
+function toggleAbout(){
+var x=document.getElementById("aboutText");
+if(x.style.display==="block"){
+x.style.display="none";
+}else{
+x.style.display="block";
+}
+}
+</script>
+
+</body>
+</html>
