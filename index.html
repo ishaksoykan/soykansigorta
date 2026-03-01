@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Soykan Sigorta | Güvenilir Sigorta Çözümleri</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- FONT AWESOME ICON -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -18,177 +15,210 @@
 }
 
 body{
-  font-family:'Poppins', sans-serif;
-  background:#f5f7fa;
-  color:#1b2e2d;
+  font-family:'Inter', sans-serif;
+  background:#0f1720;
+  color:#ffffff;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+  position:absolute;
+  width:100%;
+}
+
+nav img{
+  width:120px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-weight:500;
+  opacity:0.8;
+}
+
+nav a:hover{
+  opacity:1;
 }
 
 /* HERO */
-header{
+.hero{
   height:100vh;
-  background:
-    linear-gradient(rgba(7,30,28,0.75), rgba(7,30,28,0.75)),
-    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85') center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
-  text-align:center;
-  color:white;
-  padding:20px;
+  padding:0 8%;
+  background:
+    radial-gradient(circle at 20% 30%, #1f3b37 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #163f3b 0%, transparent 40%),
+    #0f1720;
 }
 
-.hero-box{
+.hero-content{
   max-width:800px;
-  animation:fadeUp 1.2s ease forwards;
 }
 
-.logo{
-  width:150px;
-  margin-bottom:30px;
-}
-
-h1{
-  font-size:48px;
+.hero h1{
+  font-size:56px;
   font-weight:700;
-  margin-bottom:20px;
+  line-height:1.2;
+  margin-bottom:25px;
 }
 
-p{
+.hero p{
   font-size:20px;
+  color:#b4c0c9;
   margin-bottom:40px;
 }
 
 .btn{
   display:inline-block;
-  padding:15px 35px;
-  background:#00b894;
+  padding:16px 38px;
+  background:#14b8a6;
+  border-radius:50px;
   color:white;
   text-decoration:none;
-  border-radius:50px;
   font-weight:600;
   transition:0.3s;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .btn:hover{
+  background:#0d9488;
   transform:translateY(-3px);
-  background:#019875;
-}
-
-@keyframes fadeUp{
-  from{opacity:0; transform:translateY(40px);}
-  to{opacity:1; transform:translateY(0);}
 }
 
 /* SERVICES */
 .services{
-  padding:80px 20px;
-  text-align:center;
-  background:white;
+  padding:120px 8%;
+  background:#ffffff;
+  color:#111827;
 }
 
 .services h2{
-  font-size:32px;
-  margin-bottom:50px;
+  text-align:center;
+  font-size:36px;
+  margin-bottom:80px;
 }
 
-.cards{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:30px;
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:40px;
 }
 
-.card{
-  background:#ffffff;
-  padding:30px;
-  width:280px;
-  border-radius:15px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+.service-card{
+  padding:40px;
+  border-radius:20px;
+  background:#f8fafc;
   transition:0.3s;
 }
 
-.card:hover{
+.service-card:hover{
   transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
-.card i{
-  font-size:40px;
-  color:#00b894;
-  margin-bottom:20px;
-}
-
-.card h3{
+.service-card h3{
   margin-bottom:15px;
   font-size:20px;
 }
 
-.card p{
+.service-card p{
+  color:#4b5563;
   font-size:15px;
-  margin-bottom:0;
-  color:#555;
+}
+
+/* CTA SECTION */
+.cta{
+  padding:100px 8%;
+  text-align:center;
+  background:#111827;
+}
+
+.cta h2{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#9ca3af;
+  margin-bottom:40px;
 }
 
 /* FOOTER */
 footer{
-  background:#0e2f2d;
-  color:white;
+  background:#0f1720;
   text-align:center;
-  padding:25px;
-  margin-top:60px;
+  padding:30px;
   font-size:14px;
+  color:#6b7280;
 }
 
 @media(max-width:768px){
-  h1{font-size:32px;}
-  p{font-size:16px;}
+  .hero h1{
+    font-size:38px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="hero-box">
-    <img src="logo.jpg" class="logo">
-    <h1>Güvenliğiniz Bizim Önceliğimiz</h1>
-    <p>Trafik, Kasko, Konut ve Sağlık Sigortalarında En Uygun Teklif</p>
+<nav>
+  <img src="logo.jpg">
+  <div>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#iletisim">İletişim</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Sigortada Güvenin<br>Yeni Standardı</h1>
+    <p>Trafik, Kasko, Konut ve Sağlık Sigortalarında size en uygun çözümleri sunuyoruz.</p>
     <a href="#iletisim" class="btn">Hemen Teklif Al</a>
   </div>
-</header>
+</section>
 
-<section class="services">
+<section class="services" id="hizmetler">
   <h2>Hizmetlerimiz</h2>
-  <div class="cards">
+  <div class="service-grid">
     
-    <div class="card">
-      <i class="fa-solid fa-car"></i>
+    <div class="service-card">
       <h3>Trafik Sigortası</h3>
-      <p>Zorunlu trafik sigortasında en uygun fiyat seçenekleri.</p>
+      <p>Zorunlu trafik sigortasında en uygun fiyat ve hızlı poliçe işlemi.</p>
     </div>
 
-    <div class="card">
-      <i class="fa-solid fa-shield-halved"></i>
+    <div class="service-card">
       <h3>Kasko Sigortası</h3>
-      <p>Aracınız için geniş kapsamlı güvence ve hasar koruması.</p>
+      <p>Aracınızı tüm risklere karşı kapsamlı güvence altına alın.</p>
     </div>
 
-    <div class="card">
-      <i class="fa-solid fa-house"></i>
+    <div class="service-card">
       <h3>Konut Sigortası</h3>
-      <p>Evinizi deprem, yangın ve risklere karşı güvence altına alın.</p>
+      <p>Evinizi deprem, yangın ve diğer risklere karşı koruyun.</p>
     </div>
 
-    <div class="card">
-      <i class="fa-solid fa-heart-pulse"></i>
+    <div class="service-card">
       <h3>Sağlık Sigortası</h3>
-      <p>Kendiniz ve aileniz için özel sağlık çözümleri.</p>
+      <p>Kendiniz ve aileniz için özel sağlık planları.</p>
     </div>
 
   </div>
 </section>
 
-<footer id="iletisim">
+<section class="cta" id="iletisim">
+  <h2>Size Özel Teklif Hazırlayalım</h2>
+  <p>En uygun poliçeyi birlikte belirleyelim.</p>
+  <a href="mailto:info@soykansigorta.com" class="btn">İletişime Geç</a>
+</section>
+
+<footer>
   © 2026 Soykan Sigorta | Tüm Hakları Saklıdır
 </footer>
 
