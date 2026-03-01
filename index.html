@@ -25,9 +25,9 @@ nav{
 }
 .logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:20px;color:#0e6f66}
 .logo img{width:38px}
-nav ul{list-style:none;display:flex;align-items:center;gap:30px}
+nav ul{list-style:none;display:flex;align-items:center;gap:25px}
 nav ul li a{text-decoration:none;color:#333;font-size:15px}
-.nav-btn{padding:10px 20px;background:#0e6f66;color:white;border-radius:8px;text-decoration:none;font-size:14px}
+.nav-btn{padding:10px 18px;background:#0e6f66;color:white;border-radius:8px;text-decoration:none;font-size:14px}
 
 /* HERO */
 .hero{
@@ -43,9 +43,7 @@ nav ul li a{text-decoration:none;color:#333;font-size:15px}
 .hero-left p{font-size:18px;margin-bottom:35px;opacity:.9}
 .hero-btn{padding:14px 30px;background:#0e6f66;color:white;text-decoration:none;border-radius:8px;font-weight:600}
 
-.hero-right{
-  width:420px;
-}
+.hero-right{width:420px}
 
 /* SERVICES */
 .services{padding:90px 8%;text-align:center}
@@ -65,16 +63,12 @@ nav ul li a{text-decoration:none;color:#333;font-size:15px}
 .card:hover{transform:translateY(-6px)}
 .card h3{margin:15px 0;color:#0e6f66}
 .card p{font-size:14px;color:#555}
-.icon{font-size:28px}
+.icon{font-size:26px}
 
 /* ABOUT */
-.about{
-  background:#ffffff;
-  padding:90px 8%;
-  text-align:center;
-}
+.about{background:#ffffff;padding:90px 8%;text-align:center}
 .about h2{font-size:32px;margin-bottom:25px}
-.about p{max-width:700px;margin:auto;color:#555;line-height:1.7}
+.about p{max-width:750px;margin:auto;color:#555;line-height:1.7}
 
 /* CONTACT */
 .contact{
@@ -85,14 +79,7 @@ nav ul li a{text-decoration:none;color:#333;font-size:15px}
 }
 .contact h2{font-size:32px;margin-bottom:20px}
 .contact p{opacity:.85;margin-bottom:30px}
-.contact a{
-  display:inline-block;
-  padding:14px 30px;
-  background:#1b9a8e;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-}
+.contact a{color:white;text-decoration:none}
 
 /* FOOTER */
 footer{
@@ -102,6 +89,27 @@ footer{
   padding:20px;
   font-size:14px;
 }
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  transition:0.3s;
+  z-index:9999;
+}
+.whatsapp-float:hover{transform:scale(1.1)}
 
 @media(max-width:900px){
   .hero{flex-direction:column;text-align:center;gap:50px}
@@ -133,7 +141,6 @@ footer{
   </div>
 
   <div class="hero-right">
-    <!-- Basit SVG Illustrasyon -->
     <svg viewBox="0 0 400 250" width="100%">
       <rect x="130" y="100" width="140" height="80" fill="#ffffff" rx="8"/>
       <polygon points="130,100 200,60 270,100" fill="#e6f4f3"/>
@@ -150,7 +157,6 @@ footer{
 <section class="services" id="hizmetler">
   <h2>Hizmetlerimiz</h2>
   <div class="cards">
-
     <div class="card"><div class="icon">🚗</div><h3>Trafik Sigortası</h3><p>Zorunlu trafik poliçelerinde hızlı teklif.</p></div>
     <div class="card"><div class="icon">🚙</div><h3>Kasko</h3><p>Geniş kapsamlı araç güvence seçenekleri.</p></div>
     <div class="card"><div class="icon">🏠</div><h3>Konut Sigortası</h3><p>Evinizi risklere karşı güvence altına alın.</p></div>
@@ -159,7 +165,6 @@ footer{
     <div class="card"><div class="icon">🏭</div><h3>İşyeri Sigortası</h3><p>İşletmenizi güvence altına alın.</p></div>
     <div class="card"><div class="icon">✈️</div><h3>Seyahat Sigortası</h3><p>Yurt içi ve yurt dışı güvence.</p></div>
     <div class="card"><div class="icon">👨‍👩‍👧‍👦</div><h3>Hayat Sigortası</h3><p>Aileniz için uzun vadeli güvence.</p></div>
-
   </div>
 </section>
 
@@ -173,13 +178,20 @@ footer{
 
 <section class="contact" id="iletisim">
   <h2>İletişim</h2>
-  <p>Size en uygun sigorta teklifini hazırlayalım.</p>
-  <a href="mailto:info@soykansigorta.com">Bize Ulaşın</a>
+  <p>Size en uygun sigorta teklifini hemen hazırlayalım.</p>
+
+  <div style="margin-top:30px; font-size:18px; line-height:2;">
+    📞 <a href="tel:+905322056786">0532 205 67 86</a><br>
+    💬 <a href="https://wa.me/905322056786" target="_blank">WhatsApp ile İletişim</a><br>
+    ✉️ <a href="mailto:info@soykansigorta.com">info@soykansigorta.com</a>
+  </div>
 </section>
 
 <footer>
   © 2026 Soykan Sigorta | Tüm Hakları Saklıdır
 </footer>
+
+<a href="https://wa.me/905322056786" class="whatsapp-float" target="_blank">💬</a>
 
 </body>
 </html>
