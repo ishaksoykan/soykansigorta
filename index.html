@@ -9,7 +9,7 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#f4f7f6;color:#1f2d2c;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#f4f7f6;color:#1f2d2c}
 
 /* NAVBAR */
 nav{
@@ -19,20 +19,17 @@ nav{
   align-items:center;
   padding:18px 8%;
   box-shadow:0 2px 15px rgba(0,0,0,0.05);
-  position:sticky;
-  top:0;
-  z-index:1000;
 }
 .logo{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:15px;
   font-weight:700;
-  font-size:22px;
+  font-size:24px;
   color:#0e6f66;
 }
 .logo img{
-  width:60px; /* LOGO BÜYÜTÜLDÜ */
+  height:55px; /* NET BÜYÜK LOGO */
 }
 nav ul{
   list-style:none;
@@ -73,19 +70,19 @@ nav ul li a{
   text-decoration:none;
   border-radius:8px;
   font-weight:600;
-  transition:.3s;
 }
-.hero-btn:hover{background:#e6f4f3}
 
-/* HERO IMAGE */
+/* GERÇEKÇİ GÖRSEL */
 .hero-right img{
-  width:420px;
+  width:480px;
   max-width:100%;
+  border-radius:12px;
 }
 
-/* SERVICES */
-.services{padding:90px 8%;text-align:center}
-.services h2{font-size:32px;margin-bottom:60px}
+/* SECTIONS */
+section{padding:90px 8%}
+h2{text-align:center;margin-bottom:40px;font-size:32px}
+
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -94,29 +91,26 @@ nav ul li a{
 .card{
   background:white;
   padding:30px;
-  border-radius:18px;
+  border-radius:16px;
   box-shadow:0 10px 30px rgba(0,0,0,0.06);
-  transition:.3s;
 }
-.card:hover{transform:translateY(-6px)}
-.card h3{margin:15px 0;color:#0e6f66}
+.card h3{margin-bottom:15px;color:#0e6f66}
 .card p{font-size:14px;color:#555}
-.icon{font-size:26px}
 
-/* ABOUT */
-.about{background:#ffffff;padding:90px 8%;text-align:center}
-.about h2{font-size:32px;margin-bottom:25px}
-.about p{max-width:750px;margin:auto;color:#555;line-height:1.7}
+.about p{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+  color:#555;
+  line-height:1.7;
+}
 
 /* CONTACT */
 .contact{
   background:#0f2f2d;
   color:white;
-  padding:90px 8%;
   text-align:center;
 }
-.contact h2{font-size:32px;margin-bottom:20px}
-.contact p{opacity:.85;margin-bottom:30px}
 .contact a{color:white;text-decoration:none}
 
 /* FLOATING WHATSAPP */
@@ -132,16 +126,9 @@ nav ul li a{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:28px;
+  font-size:26px;
   text-decoration:none;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
-  transition:0.3s;
-  z-index:9999;
-}
-.whatsapp-float:hover{transform:scale(1.1)}
-
-@media(max-width:900px){
-  .hero{flex-direction:column;text-align:center;gap:50px}
 }
 </style>
 </head>
@@ -172,49 +159,34 @@ nav ul li a{
   </div>
 
   <div class="hero-right">
-    <!-- DAHA PROFESYONEL ILLUSTRATION -->
-    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png">
+    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80">
   </div>
 </section>
 
-<section class="services" id="hizmetler">
+<section id="hizmetler">
   <h2>Hizmetlerimiz</h2>
   <div class="cards">
-    <div class="card"><div class="icon">🚗</div><h3>Trafik Sigortası</h3><p>Zorunlu trafik poliçelerinde hızlı teklif.</p></div>
-    <div class="card"><div class="icon">🚙</div><h3>Kasko</h3><p>Geniş kapsamlı araç güvence seçenekleri.</p></div>
-    <div class="card"><div class="icon">🏠</div><h3>Konut Sigortası</h3><p>Evinizi risklere karşı güvence altına alın.</p></div>
-    <div class="card"><div class="icon">🏢</div><h3>DASK</h3><p>Zorunlu deprem sigortası çözümleri.</p></div>
-    <div class="card"><div class="icon">❤️</div><h3>Sağlık Sigortası</h3><p>Size özel sağlık planları.</p></div>
-    <div class="card"><div class="icon">🏭</div><h3>İşyeri Sigortası</h3><p>İşletmenizi güvence altına alın.</p></div>
-    <div class="card"><div class="icon">✈️</div><h3>Seyahat Sigortası</h3><p>Yurt içi ve yurt dışı güvence.</p></div>
-    <div class="card"><div class="icon">👨‍👩‍👧‍👦</div><h3>Hayat Sigortası</h3><p>Aileniz için uzun vadeli güvence.</p></div>
+    <div class="card"><h3>Trafik Sigortası</h3><p>Zorunlu trafik poliçelerinde hızlı teklif.</p></div>
+    <div class="card"><h3>Kasko</h3><p>Geniş kapsamlı araç güvence seçenekleri.</p></div>
+    <div class="card"><h3>Konut Sigortası</h3><p>Evinizi risklere karşı güvence altına alın.</p></div>
+    <div class="card"><h3>DASK</h3><p>Zorunlu deprem sigortası çözümleri.</p></div>
   </div>
 </section>
 
-<section class="about" id="hakkimizda">
+<section id="hakkimizda" class="about">
   <h2>Hakkımızda</h2>
   <p>
-    Soykan Sigorta olarak müşterilerimize hızlı teklif, güçlü teminat ve şeffaf hizmet anlayışı sunuyoruz.
-    Sigorta branşlarında güvenilir çözüm ortağınız olmaktan gurur duyuyoruz.
+    Soykan Sigorta olarak müşterilerimize hızlı teklif, güçlü teminat ve şeffaf hizmet sunuyoruz.
   </p>
 </section>
 
-<section class="contact" id="iletisim">
+<section id="iletisim" class="contact">
   <h2>İletişim</h2>
-  <p>Size en uygun sigorta teklifini hemen hazırlayalım.</p>
-
-  <div style="margin-top:30px; font-size:18px; line-height:2;">
-    📞 <a href="tel:+905322056786">0532 205 67 86</a><br>
-    💬 <a href="https://wa.me/905322056786" target="_blank">WhatsApp ile İletişim</a><br>
-    ✉️ <a href="mailto:info@soykansigorta.com">info@soykansigorta.com</a>
-  </div>
+  <p>📞 <a href="tel:+905322056786">0532 205 67 86</a></p>
+  <p>💬 <a href="https://wa.me/905322056786" target="_blank">WhatsApp</a></p>
 </section>
 
-<footer>
-  © 2026 Soykan Sigorta | Tüm Hakları Saklıdır
-</footer>
-
-<a href="https://wa.me/905322056786" class="whatsapp-float" target="_blank">💬</a>
+<a href="https://wa.me/905322056786" target="_blank" class="whatsapp-float">💬</a>
 
 </body>
 </html>
