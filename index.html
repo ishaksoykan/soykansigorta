@@ -3,273 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soykan Sigorta | Ezbersiz Sigorta</title>
+<title>Soykan Sigorta | Güvenilir Sigorta Çözümleri</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 body{
-font-family:'Poppins',sans-serif;
-background:#f4f7f6;
-color:#1b2e2d;
-line-height:1.6;
+  font-family:'Poppins', sans-serif;
+  background:#f5f7fa;
+  color:#1b2e2d;
 }
 
+/* HERO */
 header{
-background:linear-gradient(135deg,#0f2f2d,#0e6f66);
-color:white;
-text-align:center;
-padding:110px 20px 90px;
+  height:100vh;
+  background:
+    linear-gradient(rgba(7,30,28,0.75), rgba(7,30,28,0.75)),
+    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
 }
 
-header img{
-width:220px;
-margin-bottom:25px;
+.hero-box{
+  max-width:800px;
+  animation:fadeUp 1.2s ease forwards;
 }
 
-header p{
-font-size:22px;
-opacity:0.95;
-margin-bottom:35px;
+.logo{
+  width:150px;
+  margin-bottom:30px;
+}
+
+h1{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+p{
+  font-size:20px;
+  margin-bottom:40px;
 }
 
 .btn{
-display:inline-block;
-background:#1fb6a6;
-color:white;
-padding:18px 40px;
-border-radius:14px;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
+  display:inline-block;
+  padding:15px 35px;
+  background:#00b894;
+  color:white;
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:600;
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .btn:hover{
-background:#159b8d;
-transform:translateY(-4px);
+  transform:translateY(-3px);
+  background:#019875;
 }
 
-section{
-padding:90px 20px;
-max-width:1200px;
-margin:auto;
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
 }
 
-.section-title{
-text-align:center;
-font-size:34px;
-font-weight:700;
-margin-bottom:60px;
-}
-
+/* SERVICES */
 .services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:35px;
+  padding:80px 20px;
+  text-align:center;
 }
 
-.service-card{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.05);
-text-align:center;
-transition:0.3s;
+.services h2{
+  font-size:32px;
+  margin-bottom:50px;
 }
 
-.service-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,0.08);
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
 }
 
-.service-icon{
-font-size:38px;
-margin-bottom:20px;
+.card{
+  background:white;
+  padding:30px;
+  width:280px;
+  border-radius:15px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
 }
 
-.service-card h3{
-margin-bottom:12px;
-font-size:18px;
-font-weight:600;
+.card:hover{
+  transform:translateY(-8px);
 }
 
-.service-card p{
-font-size:14px;
-opacity:0.8;
+.card h3{
+  margin-bottom:15px;
 }
 
-.about-box{
-max-width:800px;
-margin:0 auto;
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.05);
-cursor:pointer;
-transition:0.3s;
-text-align:center;
-}
-
-.about-box:hover{
-transform:translateY(-5px);
-}
-
-.about-content{
-display:none;
-margin-top:25px;
-font-size:15px;
-opacity:0.9;
-text-align:left;
-}
-
-.contact{
-background:white;
-padding:50px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.05);
-max-width:800px;
-margin:0 auto;
-text-align:center;
-}
-
-.contact h3{
-margin-bottom:25px;
-font-size:24px;
-}
-
-.contact a{
-display:block;
-margin:14px 0;
-font-size:18px;
-text-decoration:none;
-color:#0e6f66;
-font-weight:600;
-}
-
-.contact a:hover{
-color:#0f2f2d;
-}
-
+/* FOOTER */
 footer{
-text-align:center;
-padding:35px;
-background:#0f2f2d;
-color:white;
-margin-top:80px;
+  background:#0e2f2d;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:60px;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  h1{font-size:32px;}
+  p{font-size:16px;}
 }
 </style>
 </head>
 
 <body>
-</head>
-<body>
 
-</section>
-
-<!-- mevcut header buradan sonra başlayabilir -->
-<header><header>
-<img src="logo.jpg" alt="Soykan Sigorta Logo">
-<p>Sigortada Güvenin Yeni Standardı</p>
-<a href="https://wa.me/905322056786" class="btn">Hemen Teklif Al</a>
+<header>
+  <div class="hero-box">
+    <img src="logo.jpg" class="logo">
+    <h1>Güvenliğiniz Bizim Önceliğimiz</h1>
+    <p>Trafik, Kasko, Konut ve Sağlık Sigortalarında En Uygun Teklif</p>
+    <a href="#iletisim" class="btn">Hemen Teklif Al</a>
+  </div>
 </header>
 
-<section>
-<h2 class="section-title">Hizmetlerimiz</h2>
+<section class="services">
+  <h2>Hizmetlerimiz</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Trafik Sigortası</h3>
+      <p>Zorunlu trafik sigortasında en uygun fiyat garantisi.</p>
+    </div>
 
-<div class="services">
+    <div class="card">
+      <h3>Kasko Sigortası</h3>
+      <p>Aracınız için geniş kapsamlı güvence seçenekleri.</p>
+    </div>
 
-<div class="service-card">
-<div class="service-icon">🚗</div>
-<h3>Trafik Sigortası</h3>
-<p>Zorunlu trafik poliçelerinde hızlı ve uygun teklif.</p>
-</div>
+    <div class="card">
+      <h3>Konut Sigortası</h3>
+      <p>Evinizi ve eşyalarınızı güvence altına alın.</p>
+    </div>
 
-<div class="service-card">
-<div class="service-icon">🚙</div>
-<h3>Kasko</h3>
-<p>Aracınız için geniş teminatlı güvence seçenekleri.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🏠</div>
-<h3>Konut Sigortası</h3>
-<p>Evinizi risklere karşı güvence altına alın.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🏢</div>
-<h3>DASK</h3>
-<p>Zorunlu deprem sigortası çözümleri.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">❤️</div>
-<h3>Tamamlayıcı Sağlık</h3>
-<p>Özel hastanelerde ek ücret ödemeden sağlık güvencesi.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🩺</div>
-<h3>Sağlık Sigortası</h3>
-<p>Kapsamlı özel sağlık sigortası çözümleri.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">✈️</div>
-<h3>Seyahat Sigortası</h3>
-<p>Yurt içi ve yurt dışı seyahatleriniz için güvence.</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🏪</div>
-<h3>İş Yeri Sigortası</h3>
-<p>İşletmenizi beklenmedik risklere karşı koruyun.</p>
-</div>
-
-</div>
+    <div class="card">
+      <h3>Sağlık Sigortası</h3>
+      <p>Kendiniz ve aileniz için özel sağlık çözümleri.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2 class="section-title">Hakkımızda</h2>
-
-<div class="about-box" onclick="toggleAbout()">
-<strong>Bizi Yakından Tanıyın</strong>
-<div class="about-content" id="aboutText">
-Soykan Sigorta olarak sektördeki deneyimimizi güçlü danışmanlık anlayışıyla birleştiriyoruz. 
-Amacımız yalnızca poliçe kesmek değil; doğru teminatı, doğru fiyatla ve şeffaf şekilde sunmaktır.
-</div>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">İletişim</h2>
-
-<div class="contact">
-<h3>Bizimle Hemen İletişime Geçin</h3>
-
-<a href="tel:05322056786">📞 0532 205 67 86</a>
-<a href="mailto:ishak@soykansigorta.com">✉️ ishak@soykansigorta.com</a>
-<a href="https://wa.me/905322056786">💬 WhatsApp Üzerinden Yazın</a>
-
-</div>
-</section>
-
-<footer>
-© 2026 Soykan Sigorta | Ezbersiz Sigorta
+<footer id="iletisim">
+  © 2026 Soykan Sigorta | Tüm Hakları Saklıdır
 </footer>
-
-<script>
-function toggleAbout(){
-var x=document.getElementById("aboutText");
-if(x.style.display==="block"){
-x.style.display="none";
-}else{
-x.style.display="block";
-}
-}
-</script>
 
 </body>
 </html>
