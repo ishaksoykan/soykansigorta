@@ -51,26 +51,21 @@ nav ul li a{
   font-weight:600;
 }
 
-/* HERO */
+/* HERO (SADE) */
 .hero{
   background:linear-gradient(135deg,#0f2f2d,#1b9a8e);
-  padding:90px 8%;
+  padding:100px 8%;
   color:white;
+  text-align:left;
 }
-.hero-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:70px;
+.hero h1{
+  font-size:46px;
+  max-width:700px;
+  margin-bottom:20px;
 }
-.hero-left{max-width:560px}
-.hero-left h1{
-  font-size:44px;
-  margin-bottom:18px;
-}
-.hero-left p{
+.hero p{
   font-size:18px;
-  margin-bottom:30px;
+  margin-bottom:35px;
   opacity:.9;
 }
 .hero-btn{
@@ -82,25 +77,14 @@ nav ul li a{
   font-weight:600;
 }
 
-/* PREMIUM FOTO */
-.hero-right{
-  position:relative;
-}
-.hero-right img{
-  width:480px;
-  max-width:100%;
-  border-radius:16px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.25);
-}
-
 /* SERVICES */
 .services{
-  padding:80px 8%;
+  padding:90px 8%;
   text-align:center;
 }
 .services h2{
-  font-size:32px;
-  margin-bottom:50px;
+  font-size:34px;
+  margin-bottom:60px;
 }
 .cards{
   display:grid;
@@ -109,23 +93,29 @@ nav ul li a{
 }
 .card{
   background:white;
-  padding:30px;
+  padding:35px 25px;
   border-radius:18px;
   box-shadow:0 10px 30px rgba(0,0,0,0.05);
   transition:.3s;
 }
 .card:hover{transform:translateY(-6px)}
 .card i{
-  font-size:26px;
+  font-size:28px;
   color:#0e6f66;
   margin-bottom:15px;
 }
-.card h3{margin-bottom:10px;color:#0e6f66}
-.card p{font-size:14px;color:#555}
+.card h3{
+  margin-bottom:10px;
+  color:#0e6f66;
+}
+.card p{
+  font-size:14px;
+  color:#555;
+}
 
 /* ABOUT ACCORDION */
 .about{
-  padding:70px 8%;
+  padding:80px 8%;
   background:#ffffff;
   text-align:center;
 }
@@ -145,18 +135,29 @@ nav ul li a{
 .contact{
   background:#0f2f2d;
   color:white;
-  padding:60px 8%;
+  padding:70px 8%;
   text-align:center;
 }
-.contact a{color:white;text-decoration:none}
+.contact a{
+  color:white;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#0b1f1d;
+  color:#aaa;
+}
 
 /* FLOATING WHATSAPP */
 .whatsapp-float{
   position:fixed;
   bottom:25px;
   right:25px;
-  width:58px;
-  height:58px;
+  width:60px;
+  height:60px;
   background:#25D366;
   color:white;
   border-radius:50%;
@@ -168,8 +169,8 @@ nav ul li a{
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
-@media(max-width:900px){
-  .hero-inner{flex-direction:column;text-align:center}
+@media(max-width:768px){
+  .hero{text-align:center}
 }
 </style>
 </head>
@@ -191,32 +192,24 @@ nav ul li a{
 </nav>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <h1>Sigortada Güvenin Yeni Standardı</h1>
-      <p>Hızlı teklif. Güçlü teminat. Şeffaf hizmet.</p>
-      <a href="https://wa.me/905322056786" target="_blank" class="hero-btn">
-        Teklif Hesapla
-      </a>
-    </div>
-
-    <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80">
-    </div>
-  </div>
+  <h1>Sigortada Güvenin Yeni Standardı</h1>
+  <p>Hızlı teklif. Güçlü teminat. Şeffaf hizmet.</p>
+  <a href="https://wa.me/905322056786" target="_blank" class="hero-btn">
+    Teklif Hesapla
+  </a>
 </section>
 
 <section class="services" id="hizmetler">
   <h2>Hizmetlerimiz</h2>
   <div class="cards">
-    <div class="card"><i class="fa-solid fa-car"></i><h3>Trafik Sigortası</h3></div>
-    <div class="card"><i class="fa-solid fa-shield-halved"></i><h3>Kasko</h3></div>
-    <div class="card"><i class="fa-solid fa-house"></i><h3>Konut Sigortası</h3></div>
-    <div class="card"><i class="fa-solid fa-building"></i><h3>DASK</h3></div>
-    <div class="card"><i class="fa-solid fa-heart-pulse"></i><h3>Sağlık Sigortası</h3></div>
-    <div class="card"><i class="fa-solid fa-briefcase"></i><h3>İşyeri Sigortası</h3></div>
-    <div class="card"><i class="fa-solid fa-plane"></i><h3>Seyahat Sigortası</h3></div>
-    <div class="card"><i class="fa-solid fa-user-shield"></i><h3>Hayat Sigortası</h3></div>
+    <div class="card"><i class="fa-solid fa-car"></i><h3>Trafik Sigortası</h3><p>Zorunlu trafik poliçelerinde hızlı teklif.</p></div>
+    <div class="card"><i class="fa-solid fa-shield-halved"></i><h3>Kasko</h3><p>Geniş kapsamlı araç güvence seçenekleri.</p></div>
+    <div class="card"><i class="fa-solid fa-house"></i><h3>Konut Sigortası</h3><p>Evinizi güvence altına alın.</p></div>
+    <div class="card"><i class="fa-solid fa-building"></i><h3>DASK</h3><p>Zorunlu deprem sigortası çözümleri.</p></div>
+    <div class="card"><i class="fa-solid fa-heart-pulse"></i><h3>Sağlık Sigortası</h3><p>Size özel sağlık planları.</p></div>
+    <div class="card"><i class="fa-solid fa-briefcase"></i><h3>İşyeri Sigortası</h3><p>İşletmenizi koruyun.</p></div>
+    <div class="card"><i class="fa-solid fa-plane"></i><h3>Seyahat Sigortası</h3><p>Yurt içi ve yurt dışı güvence.</p></div>
+    <div class="card"><i class="fa-solid fa-user-shield"></i><h3>Hayat Sigortası</h3><p>Aileniz için güvence.</p></div>
   </div>
 </section>
 
@@ -224,7 +217,7 @@ nav ul li a{
   <h2 onclick="toggleAbout()">Hakkımızda</h2>
   <div class="about-content" id="aboutText">
     Soykan Sigorta olarak müşterilerimize hızlı teklif, güçlü teminat ve şeffaf hizmet sunuyoruz.
-    Tüm branşlarda güvenilir çözüm ortağınız olmaktan gurur duyuyoruz.
+    Trafik, kasko, konut, sağlık ve diğer branşlarda güvenilir çözüm ortağınız olmaktan gurur duyuyoruz.
   </div>
 </section>
 
@@ -234,6 +227,10 @@ nav ul li a{
   <p>💬 <a href="https://wa.me/905322056786" target="_blank">WhatsApp</a></p>
   <p>✉️ <a href="mailto:ishak@soykansigorta.com">ishak@soykansigorta.com</a></p>
 </section>
+
+<footer>
+  © 2026 Soykan Sigorta | Tüm Hakları Saklıdır
+</footer>
 
 <a href="https://wa.me/905322056786" target="_blank" class="whatsapp-float">
   <i class="fa-brands fa-whatsapp"></i>
